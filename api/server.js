@@ -7,9 +7,9 @@ const fs = require("fs");
 const connectDB = require("../config/db");
 
 // Routes
-const authRoutes = require("./routes/authRoutes");
-const chatRoutes = require("./routes/chatRoutes");
-const documentRoutes = require("./routes/documentRoutes");
+const authRoutes = require("../routes/authRoutes");
+const chatRoutes = require("../routes/chatRoutes");
+const documentRoutes = require("../routes/documentRoutes");
 
 const app = express();
 
