@@ -55,6 +55,19 @@ app.use((err, req, res, next) => {
   });
 });
 
+app.get(
+  "/",
+  (req, res) => {
+
+    res.json({
+      success: true,
+      message:
+        "AI Image Generator API Running"
+    });
+
+  }
+);
+
 const PORT = process.env.PORT || 5000;
 
 connectDB().then(() => {
