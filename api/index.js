@@ -49,11 +49,11 @@ app.use((err, req, res, next) => {
   });
 });
 
-const PORT = process.env.PORT || 5000;
+// const PORT = process.env.PORT || 5000;
 
-connectDB().then(() => {
-  app.listen(PORT, () => {
-    console.log(`🚀 Backend running on http://localhost:${PORT}`);
-    console.log(`📡 Python RAG expected at ${process.env.PYTHON_RAG_URL}`);
-  });
-});
+// connectDB().then(() => {
+//   app.listen(PORT, () => {
+//     console.log(`🚀 Backend running on http://localhost:${PORT}`);
+//     console.log(`📡 Python RAG expected at ${process.env.PYTHON_RAG_URL}`);
+//   });
+// });
