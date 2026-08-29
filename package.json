@@ -2,10 +2,10 @@
   "name": "rag-ai-chat-backend",
   "version": "1.0.0",
   "description": "Node.js Express + MongoDB backend for RAG AI Chat System",
-  "main": "api/server.js",
+  "main": "api/index.js",
   "scripts": {
-    "start": "node api/server.js",
-    "dev": "nodemon api/server.js",
+    "start": "node api/index.js",
+    "dev": "nodemon api/index.js",
     "seed": "node api/utils/seed.js"
   },
   "dependencies": {
