@@ -15,11 +15,6 @@ const app = express();
 
 connectDB()
 
-// Ensure uploads folder
-const uploadDir = path.join(__dirname, "uploads");
-if (!fs.existsSync(uploadDir)) {
-  fs.mkdirSync(uploadDir, { recursive: true });
-}
 
 // Middleware
 app.use(cors({ origin: true, credentials: true }));
