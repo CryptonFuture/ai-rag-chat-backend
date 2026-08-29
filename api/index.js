@@ -13,6 +13,8 @@ const documentRoutes = require("./routes/documentRoutes");
 
 const app = express();
 
+connectDB()
+
 // Ensure uploads folder
 const uploadsDir = path.join(__dirname, "../uploads");
 if (!fs.existsSync(uploadsDir)) {
@@ -51,9 +53,9 @@ app.use((err, req, res, next) => {
 
 const PORT = process.env.PORT || 5000;
 
-connectDB().then(() => {
+
   app.listen(PORT, () => {
     console.log(`🚀 Backend running on http://localhost:${PORT}`);
     console.log(`📡 Python RAG expected at ${process.env.PYTHON_RAG_URL}`);
   });
-});
+
