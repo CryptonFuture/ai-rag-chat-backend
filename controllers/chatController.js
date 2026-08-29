@@ -1,7 +1,7 @@
 const axios = require("axios");
 const Chat = require("../models/Chat");
 
-const PYTHON_RAG_URL = process.env.PYTHON_RAG_URL
+const PYTHON_RAG_URL = "https://python-rag-run.vercel.app/"
 
 exports.getChats = async (req, res) => {
   try {
