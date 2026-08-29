@@ -5,8 +5,8 @@ const {
   uploadDocument,
   getDocuments,
   deleteDocument,
-} = require("../../controllers/documentController");
-const { protect } = require("../../middleware/auth");
+} = require("../controllers/documentController");
+const { protect } = require("../middleware/auth");
 
 const router = express.Router();
 
