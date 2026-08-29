@@ -5,7 +5,7 @@ const path = require("path");
 const { v4: uuidv4 } = require("uuid");
 const Document = require("../models/Document");
 
-const PYTHON_RAG_URL = "https://python-rag-run.vercel.app/"
+const PYTHON_RAG_URL = process.env.PYTHON_RAG_URL
 
 exports.uploadDocument = async (req, res) => {
   try {
