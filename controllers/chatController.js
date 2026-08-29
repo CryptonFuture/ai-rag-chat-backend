@@ -1,7 +1,7 @@
 const axios = require("axios");
 const Chat = require("../models/Chat");
 
-const PYTHON_RAG_URL = process.env.PYTHON_RAG_URL || "http://127.0.0.1:8000";
+const PYTHON_RAG_URL = process.env.PYTHON_RAG_URL
 
 exports.getChats = async (req, res) => {
   try {
