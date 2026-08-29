@@ -37,12 +37,6 @@ app.get("/api/health", (req, res) => {
 app.get("/", (req, res) => {
   res.json({
     message: "RAG AI Chat Backend is running",
-    endpoints: {
-      auth: "/api/auth",
-      chats: "/api/chats",
-      documents: "/api/documents",
-      health: "/api/health",
-    },
   });
 });
 
