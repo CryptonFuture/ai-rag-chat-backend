@@ -4,7 +4,7 @@ const cors = require("cors");
 const morgan = require("morgan");
 const path = require("path");
 const fs = require("fs");
-const connectDB = require("./config/db");
+const connectDB = require("../config/db");
 
 // Routes
 const authRoutes = require("./routes/authRoutes");
